@@ -6,4 +6,4 @@
 
 Obrigado por checar esse desafio de código front-end.
 
-Você pode o acessar clicando <a href="#">aqui</a>!
+Você pode o acessar clicando <a href="https://interactive-rating-component-ashy-one.vercel.app/">aqui</a>!
