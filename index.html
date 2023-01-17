@@ -1,49 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Frontend Mentor | Interactive rating component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
+  <main class="container">
+    <!-- Rating state start -->
+    <div class="conteudo conteudo-avaliacao" id="caixa-avaliacao">
+      <div class="conteudo-avaliacao__star-icon">&#8902</div>
+      <h1>How did we do?</h1>
 
-  <!-- Rating state start -->
+      <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our
+        offering!</p>
 
-  How did we do?
+      <form id="formulario-avaliacao">
+        <div class="formulario-lista">
+          <label class="formulario-label" data-nota="5">
+            <input type="radio" name="stars" value="1" />
+            <span class="formulario-opcao" >5</span>
+          </label>
+          <label class="formulario-label" data-nota="4">
+            <input type="radio" name="stars" value="2" />
+            <span class="formulario-opcao">4</span>
+          </label>
+          <label class="formulario-label" data-nota="3">
+            <input type="radio" name="stars" value="3" />
+            <span class="formulario-opcao">3</span>
+          </label>
+          <label class="formulario-label" data-nota="2">
+            <input type="radio" name="stars" value="4" />
+            <span class="formulario-opcao">2</span>
+          </label>
+          <label class="formulario-label" data-nota="1">
+            <input type="radio" name="stars" value="5" />
+            <span class="formulario-opcao">1</span>
+          </label>
+        </div>
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+        <button type="submit" class="formulario-botao">Submit</button>
+      </form>
+    </div>
+    <!-- Rating state end -->
 
-  1 2 3 4 5
+    <!-- Thank you state start -->
+    <div class="conteudo conteudo-retorno esconde-caixa" id="caixa-retorno">
 
-  Submit
+      <img src="/images/illustration-thank-you.svg" alt="">
 
-  <!-- Rating state end -->
+      <p>You selected <span id="conteudo-nota"></span> out of 5</p>
 
-  <!-- Thank you state start -->
+      <h2>Thank you!</h2>
 
-  You selected <!-- Add rating here --> out of 5
+      <p>We appreciate you taking the time to give a rating. If you ever need more support,
+        don’t hesitate to get in touch!</p>
+    </div>
+    <!-- Thank you state end -->
+  </main>
 
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/adryancsmendes">adryancsmendes</a>.
   </div>
+
+  <script src="/js/main.js"></script>
 </body>
+
 </html>
