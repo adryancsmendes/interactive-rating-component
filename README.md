@@ -1,6 +1,6 @@
-# Frontend Mentor - QR code component solution
+# Frontend Mentor - Interactive rating component
 
-Essa é uma solução para [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI). 
+Essa é uma solução para [Interactive rating component challenge no Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI). 
 
 ## Tabela de conteúdos
 
@@ -38,7 +38,7 @@ O desafio aqui foi construir esse componente de classificação interativa, deix
 - CSS proriedades customizadas
 - Flexbox
 - Mobile-first workflow
-- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) - JavaScript
+- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) - JavaScript MDN Documentation
 
 
 ### O que eu aprendi
