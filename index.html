@@ -12,34 +12,26 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Frontend Mentor | Interactive rating component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
   <main class="container">
     <!-- Rating state start -->
     <div class="conteudo conteudo-avaliacao" id="caixa-avaliacao">
+
       <div class="conteudo-avaliacao__star-icon">&#8902</div>
+
       <h1>How did we do?</h1>
 
-      <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our
-        offering!</p>
-
       <form id="formulario-avaliacao">
-        <div class="formulario-lista">
+        <fieldset class="formulario-lista">
+          <legend>Please let us know how we did with your support request. All feedback is appreciated to help us
+            improve our
+            offering!</legend>
+
           <label class="formulario-label" data-nota="5">
             <input type="radio" name="stars" value="1" />
-            <span class="formulario-opcao" >5</span>
+            <span class="formulario-opcao">5</span>
           </label>
           <label class="formulario-label" data-nota="4">
             <input type="radio" name="stars" value="2" />
@@ -57,7 +49,8 @@
             <input type="radio" name="stars" value="5" />
             <span class="formulario-opcao">1</span>
           </label>
-        </div>
+
+        </fieldset>
 
         <button type="submit" class="formulario-botao">Submit</button>
       </form>
@@ -67,23 +60,26 @@
     <!-- Thank you state start -->
     <div class="conteudo conteudo-retorno esconde-caixa" id="caixa-retorno">
 
-      <img src="/images/illustration-thank-you.svg" alt="">
+      <img class="conteudo-retorno__imagem" src="/images/illustration-thank-you.svg" alt="imagem celular">
 
-      <p>You selected <span id="conteudo-nota"></span> out of 5</p>
+      <p class="conteudo-retorno__text">You selected <span id="conteudo-nota"></span> out of 5</p>
 
       <h2>Thank you!</h2>
 
-      <p>We appreciate you taking the time to give a rating. If you ever need more support,
+      <p class="conteudo-retorno__text">We appreciate you taking the time to give a rating. If you ever need more
+        support,
         don’t hesitate to get in touch!</p>
     </div>
     <!-- Thank you state end -->
   </main>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="https://github.com/adryancsmendes">adryancsmendes</a>.
-  </div>
-
+  <footer class="footer">
+    <div class="attribution">
+      <p class="footer-text">Challenge by <a class="footer-link" href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank">Frontend Mentor</a>.
+        Coded by <a class="footer-link" href="https://github.com/adryancsmendes">@adryancsmendes</a>.</p>
+    </div>
+  </footer>
   <script src="/js/main.js"></script>
 </body>
 

@@ -24,21 +24,25 @@ body{
     font-size:0.94rem;
 }
 
+body a{
+    text-decoration: none;
+    color:var(--white)
+}
+
 .container{
-    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height:100vh;
-    width:100%;
-    top:0;
-    
+    max-width:1440px;
+    margin:0 auto;
 }
 
 .conteudo{
-    margin:0 auto;
+    margin:25px;
     max-width:300px;
-    transform: translateY(-50%);
     border-radius:12px;
-    position: relative;
-    top:50%;
     background:var(--very-dark-blue);
     padding:25px;
 }
@@ -62,7 +66,7 @@ body{
     margin-bottom:1rem;
 }
 
-.conteudo-avaliacao p{
+.formulario-lista legend{
     line-height: 1.4rem;
     margin-bottom:1.5rem;
     color:var(--light-grey);
@@ -176,9 +180,6 @@ form button:hover{
     visibility:hidden;
 }
 
-.attribution{
-    position: absolute;
-    bottom:25px;
-    right:0;
-    left:0;
+.footer{
+    text-align: center;
 }
