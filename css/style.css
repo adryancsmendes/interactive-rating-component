@@ -22,6 +22,11 @@ body{
     background:#141519;
     color:var(--white);
     font-size:0.94rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 body a{
